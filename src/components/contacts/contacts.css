@@ -1,5 +1,16 @@
-.i
+.c
 {
+    display: flex;
     height: 100vh;
-    background-color: blue;
+    background: linear-gradient(90deg, rgba(161,58,131,1) 6%, rgba(48,69,142,1) 82%);
+}
+
+.container
+{
+    right:2;
+    left:3;
+  
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
 }

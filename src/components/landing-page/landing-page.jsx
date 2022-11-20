@@ -1,9 +1,12 @@
-import "../landing-page/landing-page.css"
+import "./landing-page.css"
 
 
 const Landing = ()=>
 {
-    return ( <div className="i">
+    return ( 
+
+    <div className="i">
+        
     <div className="i-left">
         <div className="i-wrapper">
             <h2 className="i-intro">Hi, My name is </h2>
