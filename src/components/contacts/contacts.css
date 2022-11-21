@@ -2,15 +2,23 @@
 {
     display: flex;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(161,58,131,1) 6%, rgba(48,69,142,1) 82%);
+    width: 100vw;
+    /* background: linear-gradient(90deg, rgba(161,58,131,1) 6%, rgba(48,69,142,1) 82%); */
+    background-color: white;
 }
 
 .container
 {
-    right:2;
-    left:3;
-  
     display: flex;
     align-content: space-around;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hl
+{
+    color: #8d22f1;
+}
+.ss{
+    /* color: #8d22f1; */
+    background: linear-gradient(90deg, rgba(161,58,131,1) 6%, rgba(48,69,142,1) 82%);
 }

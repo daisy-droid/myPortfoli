@@ -1,34 +1,41 @@
-import React, { useState } from "react";
+import {useRef} from "react";
+import emailjs from '@emailjs/browser';
 import './contacts.css'
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
+
 
 const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
+  const form= useRef()
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_8ct2777', 'template_vfvsr58', form.current, 'vFObGMQX8sOuhsGzX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset( )
   };
 
-  if (submitted) {
-    return (
-      <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
-      </>
-    );
-  }
+ 
+  
 
   return (
+    <section>
+       
     <div className="c">
-        <div className="container mt-6">
+   
+        <div className="container ">
+       
     <form
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
+     ref={form}
+      onSubmit={sendEmail}
       method="POST"
       target="_blank"
     >
+       <div className="text-4xl mb-3 hl">Contact Me</div>
       <div className="mb-3 pt-0">
         <input
           type="text"
@@ -48,6 +55,15 @@ const ContactForm = () => {
         />
       </div>
       <div className="mb-3 pt-0">
+        <input
+          type="text"
+          placeholder="Subject"
+          name="Subject"
+          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+          required
+        />
+      </div>
+      <div className="mb-3 pt-0">
         <textarea
           placeholder="Your message"
           name="message"
@@ -57,7 +73,7 @@ const ContactForm = () => {
       </div>
       <div className="mb-3 pt-0">
         <button
-          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ss"
           type="submit"
         >
           Send a message
@@ -66,7 +82,8 @@ const ContactForm = () => {
     </form>
     </div>
     </div>
-  );
+    </section>
+  )
 };
 
 export default ContactForm;
