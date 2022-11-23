@@ -1,6 +1,6 @@
 .i {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
      /* background: linear-gradient(90deg, rgba(85,15,101,1) 35%, rgba(38,44,111,1) 100%);; */
      /* background-color: rgb(65, 90, 8); */
      background-color: rgb(240, 243, 247);
@@ -145,17 +145,19 @@
   
   .i-bg {
     border-radius: 50%;
-    background:#e7add6;
-    Width: 50%;
-    height: 50%;
+    background:#f5d7ec;
+    Width: 15%;
+    height: 15%;
     position: absolute;
     margin-top: 10p;
     margin-bottom: 3px;
     top: 25%;
-    right: 1;
+    right: 0;
     left: 1;
-    animation: zoom-in-zoom-out 10s ease infinite;
+    /* animation: zoom-in-zoom-out 10s ease infinite; */
   }
+  .i-bg2
+  {}
 
 @keyframes zoom-in-zoom-out {
   0% {
