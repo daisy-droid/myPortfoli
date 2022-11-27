@@ -1,5 +1,8 @@
 import "./landing-page.css";
-// import Me from "../../images/IMG-20221122-WA0001-removebg-preview.png"
+import Me from "../../images/IMG-20221122-WA0001-removebg-preview.png"
+
+
+
 
 const Landing = () => {
   return (
@@ -22,27 +25,25 @@ const Landing = () => {
         <div className="i-wrapper">
           <h2 className="i-intro">Hi, My name is </h2>
           <h1 className="i-name"> Ipeleng Mothibi</h1>
+          <div className="i-desc ">
+            I am a 
+          </div>
           <div className="i-title">
+            
             <div className="i-title-wrapper">
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Backend developer</div>
+              <div className="i-title-item">Frontend Developer</div>
+              <div className="i-title-item">Software Developer</div>
             </div>
           </div>
 
-          <div className="i-desc ">
-            I am full-stack developer who enjoys trying out new technology, I
-            pride myself in being a hard-worker that is not intimidated by
-            learning new technologies which will be beneficial when the company
-            has to adapt to new technologies and or uses technologies I'm not
-            familiar with
-          </div>
+         
           <div className="buttons mt-5 ">
             <div>
               <button
-                className=" text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  mr-1 mb-1 ease-linear transition-all duration-150 ss"
+                className=" text-white active:bg-blue-600 font-bold- uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  mr-1 mb-1 ease-linear transition-all duration-150 ss"
                 type="submit"
               >
                 Contact Me
@@ -55,7 +56,7 @@ const Landing = () => {
                 download="Ipeleng_Idah Mothibi_Resume.pdf"
               >
                 <button
-                  className=" resume text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ss"
+                  className=" resume text-white active:bg-blue-600 font-bold- uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ss"
                   type="submit"
                 >
                   Resume{" "}
@@ -78,7 +79,7 @@ const Landing = () => {
       </div>
       <div className="i-right">
         <div className="i-bg">
-          {/* <img src={Me} alt="" className="i-img" /> */}
+          <img src={Me} alt="" className="i-img" />
         </div>
       </div>
     </div>
