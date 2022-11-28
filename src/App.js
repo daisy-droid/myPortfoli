@@ -1,6 +1,7 @@
 
 import './App.css';
 import ContactForm from './components/contacts/contacts';
+import Education from './components/Education/education';
 import Landing from './components/landing-page/landing-page';
 import Skillspage from './components/skills-page/skills';
 
@@ -12,6 +13,7 @@ function App() {
    
         <Landing/>
         <Skillspage/>
+        <Education/>
         <ContactForm/>
       </div>
     </div>
