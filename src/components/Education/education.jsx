@@ -80,6 +80,32 @@ const Education =()=>
        <div className="E">
         <div className="yeah">
          <div className="grid grid-cols-1 justify-center boom">
+            
+            <h1 className="headi"> Education</h1>
+            <div>
+            <div className="card w-40 bg-primary text-primary-content">
+  <div className="card-body">
+    <h2 className="card-title">Tshwane University Of Technology</h2>
+    <p>ND: Software Development</p>
+    <h6>2018-2021</h6>
+    <div className="card-actions justify-end">
+    
+    </div>
+  </div>
+</div>
+<div className="card w-40 bg-primary text-primary-content">
+  <div className="card-body">
+    <h2 className="card-title">System Support</h2>
+    <p>NQ5 Learnership</p>
+    <h6>2022-present</h6>
+    <div className="card-actions justify-end">
+    
+    </div>
+  </div>
+</div>
+            </div>
+            </div>
+         <div className="grid grid-cols-1  justify-center boom">
            <h1 className="headi"> Certifications</h1>
            {/* <div className="grid grid-rows-2 r">
                     hugyftg

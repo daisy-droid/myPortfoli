@@ -78,8 +78,8 @@ const Landing = () => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg">
-          <img src={Me} alt="" className="i-img" />
+        <div className="i-bg ">
+          <img src={Me} alt="" className="i-img sm:flex-shrink" />
         </div>
       </div>
     </div>

@@ -12,15 +12,15 @@ const ContactForm = () => {
 
     emailjs.sendForm('service_8ct2777', 'template_vfvsr58', form.current, 'vFObGMQX8sOuhsGzX')
       .then((result) => {
-          console.log(result.text);
+          console.log('SUCCESS!',result.text);
       }, (error) => {
-          console.log(error.text);
+          console.log('Couldnt send',error.text);
       });
       e.target.reset( )
   };
 
  
-  
+ 
 
   return (
     <section>
