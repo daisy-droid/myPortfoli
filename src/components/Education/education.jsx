@@ -82,22 +82,22 @@ const Education =()=>
          <div className="grid grid-cols-1 justify-center boom">
             
             <h1 className="headi"> Education</h1>
-            <div>
-            <div className="card w-40 bg-primary text-primary-content">
+            <div className="ys">
+            <div className="card w-48 bg-accent-content shadow-xl mt-5 ml-1 mr-">
   <div className="card-body">
-    <h2 className="card-title">Tshwane University Of Technology</h2>
-    <p>ND: Software Development</p>
-    <h6>2018-2021</h6>
+    <h4 className="card-title">Tshwane University Of Technology</h4>
+    <p className="descr">ND: Software Development</p>
+    <h6 className="dat">2018-2021</h6>
     <div className="card-actions justify-end">
     
     </div>
   </div>
 </div>
-<div className="card w-40 bg-primary text-primary-content">
+<div className=" card w-48 bg-accent-content shadow-xl mt-5 ml-1 mr-">
   <div className="card-body">
     <h2 className="card-title">System Support</h2>
-    <p>NQ5 Learnership</p>
-    <h6>2022-present</h6>
+    <p className="descr">NQ5 Learnership</p>
+    <h6 className="dat">2022-present</h6>
     <div className="card-actions justify-end">
     
     </div>
