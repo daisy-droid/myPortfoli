@@ -23,7 +23,7 @@ const ContactForm = () => {
  
 
   return (
-    <section>
+    <section id="contact">
       <div className="c">
         <div class>
       <div className="left">

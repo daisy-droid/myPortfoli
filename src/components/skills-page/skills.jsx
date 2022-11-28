@@ -4,7 +4,7 @@ import nices from "../../images/undraw_designer_life_re_6ywf(1).svg";
 
 const Skillspage = () => {
   return (
-    <div className="skillspage min-h-screen">
+    <div className="skillspage min-h-screen" id="skills">
       <div>
         <h1 className="boom">Skills</h1>
       </div>

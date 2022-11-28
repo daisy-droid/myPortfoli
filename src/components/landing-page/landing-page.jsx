@@ -5,8 +5,11 @@ import Me from "../../images/IMG-20221122-WA0001-removebg-preview.png"
 
 
 const Landing = () => {
+
+
+
   return (
-    <div className="min-h-screen i">
+    <div className="min-h-screen i" id="home">
       <div className="i-bg2"></div>
       <div class="custom-shape-divider-top-1669022440">
         <svg
@@ -21,6 +24,7 @@ const Landing = () => {
           ></path>
         </svg>
       </div>
+
       <div className="i-left">
         <div className="i-wrapper">
           <h2 className="i-intro">Hi, My name is </h2>
@@ -44,7 +48,7 @@ const Landing = () => {
             <div>
               <button
                 className=" text-white active:bg-blue-600 font-bold- uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  mr-1 mb-1 ease-linear transition-all duration-150 ss"
-                type="submit"
+                type="submit" 
               >
                 Contact Me
               </button>
@@ -57,7 +61,7 @@ const Landing = () => {
               >
                 <button
                   className=" resume text-white active:bg-blue-600 font-bold- uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ss"
-                  type="submit"
+                  type="submit" 
                 >
                   Resume{" "}
                   <svg
@@ -71,6 +75,7 @@ const Landing = () => {
                     <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
                     <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
                   </svg>
+                  
                 </button>
               </a>
             </div>

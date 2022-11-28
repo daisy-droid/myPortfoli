@@ -1,0 +1,9 @@
+.navbar
+{
+    z-index: 100;
+    font-size: 25px;
+    position: fixed;
+    color: #8d22f1;
+    background-color:rgb(245, 200, 239);
+
+}
